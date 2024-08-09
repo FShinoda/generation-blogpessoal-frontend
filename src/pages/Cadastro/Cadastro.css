@@ -1,0 +1,8 @@
+.fundoCadastro {
+    background-image: url(https://github.com/LucasCapSilva/blog-pessoal-react-2023/blob/cadastro-template/src/assets/cadastro.jpg?raw=true);
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
