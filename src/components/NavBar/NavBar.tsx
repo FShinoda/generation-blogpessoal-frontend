@@ -4,7 +4,7 @@ import { AuthContext } from '../../contexts/AuthContext'
 
 
 
-function NavBar() {
+function Navbar() {
   let navigate = useNavigate()
 
   const { usuario, handleLogout } = useContext(AuthContext)
@@ -15,6 +15,7 @@ function NavBar() {
       navigate('/login')
   }
 
+  let navbarComponent
   
 
   return (
@@ -24,7 +25,7 @@ function NavBar() {
           <Link to='/home' className='text-2xl font-bold uppercase'>Blog Pessoal</Link>
 
             <div className='flex gap-4'>
-            <div className='hover:underline'>Postagens</div>
+            <Link to='/postagens' className='hover:underline'>Postagens</Link>
             <Link to='/temas' className='hover:underline'>Temas</Link>
             <Link to='/cadastroTema' className='hover:underline'>Cadastrar tema</Link>
               <div className='hover:underline'>Perfil</div>
@@ -37,4 +38,4 @@ function NavBar() {
   )
 }
 
-export default NavBar
+export default Navbar
